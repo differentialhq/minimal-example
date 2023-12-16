@@ -2,11 +2,15 @@
   "name": "minimal-example",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "services:hello": "tsx src/services/hello-service.ts",
+    "client:hello": "tsx src/example-1-simple.ts",
+    "test": "DEBUG=* node --import tsx --test src/tests/example.test.ts"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@differentialhq/core": "^3.0.3",
+    "@differentialhq/core": "^3.0.4",
     "tsx": "^4.6.2"
   },
   "devDependencies": {
