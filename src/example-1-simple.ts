@@ -9,6 +9,9 @@ import process from "process";
   // via generics. you can pass in any serializable arguments you
   // want, and accept any serializable return value you want.
   //
+  // try changing the type of the argument to "hello" to a number,
+  // to see the type-safety in action.
+  //
   // this function will be served by the helloService
   const greeting = await d.call<typeof helloService, "hello">(
     "hello",
